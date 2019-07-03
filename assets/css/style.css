@@ -22,14 +22,14 @@
 
 /**************HEADER************/
 html, body{
-	font-size: 16px;
+	font-size: calc(4px + 1vw);
 	overflow-x: hidden;
 	font-family: 'Open Sans', sans-serif;
 	background-color: #FFF;
 }
 /***NAV**/
 header{
-	height: 100vh;
+	height: 90vh;
 	position: relative;
 	background-color:  #0f0f6d;
 	/*background-image: url(../images/service.png);*/
@@ -109,15 +109,15 @@ header p{
 	width: 16em;
 	border-radius: 2px;
 	margin-right: 2em;
-	font-size: 0.7em;
+	font-size: 0.9em;
 	letter-spacing: 3px;
 	z-index: 5;
 	
 }
 .cta{
 	position: relative;
-	top: 20%;
-	left: 15%;
+	top: 30%;
+	margin-top: -50px; 
 	padding: 1em;
 }
 @keyframes bounce {
@@ -210,13 +210,13 @@ header h1{
 }
 .s{
 	padding:20px!important;
-	height: 250px;
+	height: 18em;
 }
 .s p{
 	font-size: 0.8em;
 }
 .icon img{
-	height: 60px;
+	height: 5.5em;
 	
 }
 /******SERVICES*****/
@@ -274,3 +274,14 @@ header h1{
 	background-color: rgba(15, 15, 109, 0.3);
 }
 /**************FOOTER************/
+
+@media(max-width: 600px){
+	html{
+		
+	}
+	.grid-wrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+	grid-column-gap: 2%;
+	
+}
