@@ -1,0 +1,276 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "Gotham-Book";
+  src: url("../assets/fonts/GothamBookRegular.eot"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/GothamBookRegular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../assets/fonts/GothamBookRegular.otf") format("opentype"), /* Open Type Font */
+    url("../assets/fonts/GothamBookRegular.svg") format("svg"), /* Legacy iOS */
+    url("../assets/fonts/GothamBookRegular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../assets/fonts/GothamBookRegular.woff") format("woff"), /* Modern Browsers */
+    url("../assets/fonts/GothamBookRegular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+/**************HEADER************/
+
+
+/**************MAIN************/
+/**************FOOTER************/
+
+
+
+
+/**************HEADER************/
+html, body{
+	font-size: 16px;
+	overflow-x: hidden;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #FFF;
+}
+/***NAV**/
+header{
+	height: 100vh;
+	position: relative;
+	background-color:  #0f0f6d;
+	/*background-image: url(../images/service.png);*/
+}
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vw;
+  /* set height to pixels if you want angle to change with screen width */
+}
+
+.background-image{
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	
+	background-blend-mode: screen;
+}
+nav{
+	background-color: transparent;
+	box-shadow: none;
+}
+nav ul a {
+	color: white;
+	letter-spacing: 3px;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+.brand-logo img{
+	height: 80px;
+	padding: 10px;
+}
+
+header p{
+	font-size: 1.5em;
+	font-weight: 100;
+	color: lightgray;
+	letter-spacing: 1px;
+	
+	font-family: 'Open Sans', sans-serif;	
+
+}
+.scroll-down{
+	position: absolute;
+	right: 5%;
+	bottom: 10%;
+	 transform: rotate(90deg);
+}
+.scroll-down p{
+	font-size: 0.7em;
+	letter-spacing: 3px;
+	-webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+	 animation-name: bounce;
+  -moz-animation-name: bounce;
+	color: white;
+}
+.scroll-down p i{
+	font-size: 1em;
+	padding: 3px;
+	margin-left: 1px;
+	
+}
+.cta .btn{
+	background-color:transparent;
+	border:2px solid #fff;
+	width: 16em;
+	border-radius: 2px;
+	margin-right: 2em;
+	font-size: 0.7em;
+	letter-spacing: 3px;
+	z-index: 5;
+	
+}
+.cta{
+	position: relative;
+	top: 20%;
+	left: 15%;
+	padding: 1em;
+}
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateX(0);
+		-ms-transform:     translateX(0);
+		transform:         translateX(0)
+	}
+	40% {
+		-webkit-transform: translateX(-30px);
+		-ms-transform:     translateX(-30px);
+		transform:         translateX(-30px)
+	}
+	60% {
+		-webkit-transform: translateX(-15px);
+		-ms-transform:     translateX(-15px);
+		transform:         translateX(-15px)
+	}
+}
+
+/**************MAIN************/
+/*****ABOUT*****/
+.c{
+	
+	
+	background-size: 100vw;
+}
+
+header h1{
+	font-family: 'Crimson Text', serif;
+	color: white;
+	font-size: 3em;
+	
+	
+}
+.about h1{
+	font-family: 'Crimson Text', serif;
+	font-size: 3em;
+}
+.about h3{
+	font-size: 2em;
+	font-family: 'Crimson Text', serif;
+	
+}
+.about p{
+	font-size: 0.9em;
+	font-weight: 100;
+	
+}
+.about{
+	
+	position: relative;
+	min-height: 150vh;
+	
+}
+.smart-wrapper >*{
+	color: blue
+}
+.smart h6{
+	font-weight: 900;
+	font-size: 1.3em;
+	letter-spacing: 0.12em;
+	font-family: 'Crimson Text', serif;
+	line-height: 31.2px;
+}
+ p{
+	font-size: 0.7em;
+	letter-spacing: 0.05em;
+	font-weight: 400;
+	line-height: 1.5em;
+	
+}
+.smart-wrapper h3:after{
+	content: "";
+	display: block;
+	margin: 0  auto;
+	width: 20%;
+	padding-top: 20px;
+	border-bottom: 1px solid darkgoldenrod;
+}
+.grid-wrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	
+}
+
+.indent{
+	padding-left: 6em;
+	padding-right: -6em;
+}
+.s{
+	padding:20px!important;
+	height: 250px;
+}
+.s p{
+	font-size: 0.8em;
+}
+.icon img{
+	height: 60px;
+	
+}
+/******SERVICES*****/
+.services {
+	position: relative;
+	background-color: #0f0f6d;
+}
+.svg-wrap{
+	position: relative;
+}
+.services svg{
+	
+  position: absolute;
+ 
+  width: 100vw;
+  height: 10vw;
+  /* set height to pixels if you want angle to change with screen width */
+
+}
+.services > *{
+	color:#fff;
+}
+.sub-header{
+	/*font-family: 'Crimson Text', serif;*/
+	font-size: 1.3em;
+	line-height: 31px;
+	font-weight: 800;
+}
+.sub-header:after{
+	content: "";
+	display: block;
+	margin: 0 ;
+	width: 20%;
+	padding-top: 20px;
+	border-bottom: 1px solid darkgoldenrod;
+}
+.services p{
+	/*font-family: 'Crimson Text', serif;*/
+	font-size: 0.9em;
+	font-weight: 300;
+	line-height:28px;
+}
+.box{
+	
+	min-height: 300px;
+	padding: 1em;
+	
+	
+}
+/*.box:nth-child(2),.box:nth-child(3),.box:nth-child(6){
+	background-color: #0f0f6d;
+	color: white;
+}
+.box:nth-child(1),.box:nth-child(4),.box:nth-child(5){
+	background-color: rgba(15, 15, 109, 0.3);
+}
+/**************FOOTER************/
