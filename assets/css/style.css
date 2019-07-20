@@ -42,7 +42,7 @@ header {
 	height: 110vh;
 	position: relative;
 	
-	background-image: url(../images/head.jpg);
+	background-image: url(../images/analysis.jpg);
 }
 
 svg {
@@ -60,6 +60,7 @@ svg {
 	-o-background-size: cover;
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
 
 	background-blend-mode: screen;
 }
@@ -139,7 +140,10 @@ header p {
 	margin-top: -50px;
 	padding: 1em;
 }
-
+.cta .btn:hover {
+	background-color: #000038;
+	color: white;
+}
 @keyframes bounce {
 
 	0%,
@@ -184,6 +188,7 @@ header h1 {
 .about h1 {
 	font-family: 'Crimson Text', serif;
 	font-size: 3em;
+	color: #000038;
 }
 
 .about h3 {
@@ -192,11 +197,47 @@ header h1 {
 
 }
 
-.about p {
+.about p, .career p {
 	font-size: 0.9em;
 	font-weight: 100;
-	color: #0f0f6d;
+	color: #000038;
 	
+	
+}
+
+.who h1:after {
+	content: "";
+	display: block;
+	margin: 0 auto;
+	width: 20%;
+	padding-top: 20px;
+	border-bottom: 1px solid darkgoldenrod;
+}
+.who h1{
+	animation: fadeInDown 2s;
+}
+.about .who p{
+	animation: fadeInRight 2s;
+}
+@keyframes fadeInRight {
+   0% {
+      opacity: 0;
+      transform: translateX(200px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+@keyframes fadeInDown {
+   0% {
+      opacity: 0;
+      transform: translateY(-100px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
 }
 
 .about {
@@ -207,9 +248,27 @@ header h1 {
 }
 
 .smart-wrapper {
-	background-color: rgba(15, 15, 109, 0.1);
+	
 	padding: 1.3em;
+	animation: fadein 3s;
 }
+.smart-img{
+	background-image: url(../images/chess.jpg);
+	height: 70vh;
+	background-color: #000038;
+}
+@keyframes fadein {
+    from { 
+		opacity: 0;
+		transform: translateX(-30px);
+		
+	}
+    to   { 
+		opacity: 1;
+		transform: translateX(30px);
+	}
+}
+
 
 .smart-wrapper > * {
 	color: #0f0f6d
@@ -266,8 +325,8 @@ p {
 /******SERVICES*****/
 .services {
 
-	background-color: #0f0f6d;
-
+	background-color: #000038;
+	
 	min-height: 260vh !important;
 	margin-top: 20%;
 	margin-bottom: 10%;
@@ -291,9 +350,9 @@ p {
 .services svg {
 
 	position: absolute;
-
+	bottom: 0;
 	width: 100vw;
-	height: 10vw;
+	height: 10vh;
 	/* set height to pixels if you want angle to change with screen width */
 
 }
@@ -313,9 +372,13 @@ p {
 	content: "";
 	display: block;
 	margin: 0;
-	width: 20%;
+	width: 0%;
+	transition: width 2s ease-out ;
 	padding-top: 20px;
 	border-bottom: 1px solid darkgoldenrod;
+}
+.web:after{
+	width: 20%;
 }
 
 .services p {
@@ -337,10 +400,29 @@ p {
 
 .box {
 
-	min-height: 300px;
+	height: 1em;
 	padding: 1em;
+	overflow: hidden;
+ -webkit-transition: height ease-in-out 2s;
+	-moz-transition: height ease-in-out 2s;
+	-o-transition: height ease-in-out 2s;
+	transition: height ease-in-out 2s;
+	
 
-
+}
+.boxfull{
+	animation: curtain 2s forwards;
+}
+@keyframes curtain {
+	from{
+		opacity: 0;
+		height: 1em
+	}
+	
+	to{
+		opacity: 1;
+		height: 33em
+	}
 }
 
 .box:nth-child(2) {
@@ -369,7 +451,7 @@ p {
 }
 .product p
 {
-	color: #0f0f6d;
+	color: #00006d;
 	font-size: 0.9em;
 }
 
@@ -404,42 +486,72 @@ p {
 }
 /******CONTACT*********/
 .contact {
-	background-color: #0f0f6d;
+	/*background-color: #0f0f6d;*/
 	padding: 1em;
 }
 
 .contact h1 {
 	font-family: 'Crimson Text', serif;
-	color: white;
+	color: #0f0f6d;
 	line-height: 1.5em;
 }
 
 .contact label {
 	font-size: 0.6em;
-	color: white;
+	color: #0f0f6d;
 	letter-spacing: 0.25em;
 }
 
 .contact button {
 	background-color: transparent;
 	width: 17em;
-	border: 1px solid white;
+	border: 1px solid #000038;
+	color: #000038;
 }
 
 .contact button:hover {
-	background-color: white;
-	color: #0f0f6d;
+	background-color: #000038;
+	color: white;
 }
-
+.career-img{
+	background-image: url(../images/black.jpg);
+	height: 70vh;
+	background-color: #000038;
+}
+/* label color */
+  
+   /* label focus color */
+   .input-field input[type=text]:focus + label,.input-field input[type=email]:focus + label,.input-field textarea:focus + label {
+     color: #000038!important;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus, .input-field input[type=email]:focus,.input-field textarea:focus  {
+     border-bottom: 1px solid #000038!important;
+     box-shadow: 0 1px 0 0 #000038!important;
+   }
+   /* valid color */
+   .input-field input[type=text].valid,  .input-field input[type=email].valid {
+     border-bottom: 1px solid #000038!important;
+     box-shadow: 0 1px 0 0 #000038!important;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid, .input-field input[type=email].invalid  {
+     border-bottom: 1px solid #000038!important;
+     box-shadow: 0 1px 0 0 #000038!important;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #000038!important;
+   }
 /**************FOOTER************/
 footer {
-	background-color: white !important;
+	background-color: #000038 !important;
 	font-size: 0.8em;
 }
 
 footer > *,
 footer a {
-	color: #0f0f6d !important;
+	color:  !important;
 }
 
 @media(max-width: 600px) {
@@ -450,6 +562,14 @@ footer a {
 		grid-template-columns: 1fr 1fr;
 		grid-column-gap: 2%;
 	}
+	.services {
+
+	background-color: #000038;
+	
+	min-height: 180vh !important;
+	margin-top: 20%;
+	margin-bottom: 10%;
+}
 
 	.box {
 		transform: translate(0, 0) !important;

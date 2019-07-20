@@ -27,13 +27,13 @@
 	<!--[if IE]>
   		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-	<script>
-		document.documentElement.className = 'js';
 
-	</script>
 	<script>
 		$(document).ready(function() {
-			$('.sidenav').sidenav();
+			
+			
+			$('.box').addClass('boxfull');
+			$('.sub-header').addClass('web');
 		})
 
 	</script>
@@ -46,8 +46,8 @@
 			<a href="#" class="brand-logo left "><img src="assets/images/logo.svg"></a>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
 				<li><a href="sass.html">Home</a></li>
-				<li><a href="badges.html">Products</a></li>
-				<li><a href="collapsible.html">Contact</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 
 		</nav>
@@ -59,8 +59,8 @@
 		<div class="cta">
 			<h1>Corporate Strategy and Managements</h1>
 			<p>Wise counsel to achieve our goals</p>
-			<a class="btn">LOOK HERE</a>
-			<a class="btn">LOOK HERE</a>
+			<a class="btn">Learn more</a>
+			<!--<a class="btn">LOOK HERE</a>-->
 		</div>
 		<!--<div class="scroll-down">
 			<p>scroll-down<i class="material-icons right">arrow_forward</i></p>
@@ -71,7 +71,7 @@
 	<section class="about  c background-image">
 		<div class="">
 			<div class="container">
-				<div>
+				<div class='who'>
 					<h1 class='center'>Who we are</h1>
 					<p>Vecchia Global Services is a firm that provides bespoke management strategy/implementation services to the Nigerian gaming industry and helps clients increase their customer base. We do this by;</p>
 					<p class="indent"><span></span> Providing technology ( apps/games/B2B software ) that increase customer acquisition and retention. We provide innovative general or custom made technology for our clients based on their needs/goals, and based on any recommended qualitative/quantitative VGS strategy on how they can grow their customer base. </p>
@@ -79,7 +79,9 @@
 				</div>
 
 			</div>
-			<div class='smart-wrapper center'>
+			<div class="smart-img background-image">
+			</div>
+			<div class='smart-wrapper background-image center'>
 				<h3 class="">SMART STRATEGY</h3>
 				<p class="">Smart Strategy is the most effective roadmap towards your desired destination.</p>
 				<div class="row smart">
@@ -103,27 +105,28 @@
 
 		</div>
 	</section>
-	<section class="product ">
-		
+	<!--<section class="product ">
+
 
 		<!--<div>
 			<p>VGS has partnered with Edinburgh based award winning B2B software developer Incentive Games to provide technological solutions to the Nigerian gaming Industry. Incentive Games build software for businesses which allows them to acquire customers at a fraction of the industry standard cost through innovative gamification. They create engaging, accessible games which go beyond customer acquisition in providing businesses the means to significantly improve customer retention rates as well as more efficiently monetize their userbase through upselling bespoke versions of their clients’ high value products and services. </p>
 			<a href="#" class="btn">Learn More</a>
-		</div>-->
+		</div>
 		<div class="row desc">
 			<div class="outer col m6">
 				<div class="incentive"><img src="assets/images/icenti.jpg"></div>
 				<a href="#" class="btn">Learn More</a>
 			</div>
 			<div class="inner col m6 ">
-				
+
 				<h1>Products</h1>
 				<div>
-					<p>VGS has partnered with Edinburgh based award winning B2B software developer Incentive Games to provide technological solutions to the Nigerian gaming Industry. Incentive Games build software for businesses which allows them to acquire customers at a fraction of the industry standard cost through innovative gamification. They create engaging, accessible games which go beyond customer acquisition in providing businesses the means to significantly improve customer retention rates as well as more efficiently monetize their userbase through upselling bespoke versions of their clients’ high value products and services. </p></div>
+					<p>VGS has partnered with Edinburgh based award winning B2B software developer Incentive Games to provide technological solutions to the Nigerian gaming Industry. Incentive Games build software for businesses which allows them to acquire customers at a fraction of the industry standard cost through innovative gamification. They create engaging, accessible games which go beyond customer acquisition in providing businesses the means to significantly improve customer retention rates as well as more efficiently monetize their userbase through upselling bespoke versions of their clients’ high value products and services. </p>
+				</div>
 			</div>
-			
+
 		</div>
-	</section>
+	</section>-->
 	<!--<section class="about">
 		
 	
@@ -146,14 +149,14 @@
 		</div>
 	</section>-->
 
-	<section class="services ">
+	<section class="services " id="services">
 		<div class="svg-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-				<polygon fill="#0f0f6d" points="0,0 0,100 100,100" />
+				<polygon fill="#000038" points="0,0 0,100 100,100" />
 			</svg></div>
 		<div class="contain">
 			<div class='grid-wrapper'>
 				<div class="box card">
-					<h3 class="sub-header">Declining Profitability Analysis and Solutions Implementation</h3>
+					<h3 class="sub-header ">Declining Profitability Analysis and Solutions Implementation</h3>
 					<p>We offer a top down approach to an operator's declining profitability problem. Why is your profit declining? What revenue stream is affected? Is it tied to a general gaming market behavior or trend? Are your operational costs increasing? Are you experiencing a declining volume of bets placed on your platform? Why? Or maybe there is no decline, but you want to increase your profits? A VGS analysis encompasses all aspects of the problem or goal. <br><br>
 						We collate all relevant data, identify the possible causes, and propose long lasting solutions through qualitative and quantitative methods.
 					</p>
@@ -209,68 +212,90 @@
 			
 		</div>
 	</section>-->
-	<section class="contact">
+	<div class="career-img background-image">
+			</div>
+	<section class="career">
+		<!---CAREERS-->
+		<div>
+			<div id='' class="  contain center" data-aos="fade-up">
+
+				<p class="">We are always looking to add new talent to our firm.</p>
+				<p class="">Send your resume and cover letter to <strong> hr@vecchiags.com </strong>and if your qualifications fit our needs, we will get in touch with you.</p>
+
+			</div>
+		</div>
+	</section>
+	<section class="contact" id="contact">
 		<div>
 			<h1>CONTACT US</h1>
 		</div>
 		<div class="row container">
 			<form class="col s12">
 				<div class="row">
-				
+
 					<div class="input-field col s12">
 						<input id="last_name" type="text" class="validate">
 						<label for="last_name">FULL NAME</label>
 					</div>
 				</div>
 				<div class="row">
-				
+
 					<div class="input-field col s12">
 						<input id="last_name" type="text" class="validate">
 						<label for="last_name">ORGANIZATION</label>
 					</div>
 				</div>
-				
+
 				<div class="row">
 					<div class="input-field col s12">
 						<input id="email" type="email" class="validate">
 						<label for="email">EMAIL</label>
 					</div>
 				</div>
-				<div>
-					 <button class="btn waves-effect waves-light right" type="submit" name="action">Submit
-    <i class="material-icons right">send</i>
-  </button>
+				<div class="row">
+					<div class="input-field col s12">
+						<textarea id="textarea1" class="materialize-textarea"></textarea>
+						<label for="textarea1">MESSAGE</label>
+					</div>
 				</div>
-				
+
+
+				<div>
+					<button class="btn waves-effect waves-light right" type="submit" name="action">Submit
+						<i class="material-icons right">send</i>
+					</button>
+				</div>
+
 			</form>
+
 		</div>
 	</section>
 
-	 <footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="">Links</h5>
-                <ul>
-                  <li><a class="" href="#!">Link 1</a></li>
-                  <li><a class="" href="#!">Link 2</a></li>
-                  <li><a class="" href="#!">Link 3</a></li>
-                  <li><a class="" href="#!">Link 4</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2019 Copyright Vecchia Global Service
-            <a class=" right" href="#!">rd3studios</a>
-            </div>
-          </div>
-        </footer>
+	<footer class="page-footer">
+		<div class="container">
+		<!--	<div class="row">
+				<div class="col l6 s12">
+					<h5 class="">Footer Content</h5>
+					<p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="">Links</h5>
+					<ul>
+						<li><a class="" href="#!">Link 1</a></li>
+						<li><a class="" href="#!">Link 2</a></li>
+						<li><a class="" href="#!">Link 3</a></li>
+						<li><a class="" href="#!">Link 4</a></li>
+					</ul>
+				</div>
+			</div>-->
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2019 Copyright Vecchia Global Service
+				<a class=" right" href="#!">rd3studios</a>
+			</div>
+		</div>
+	</footer>
 	<script src="assets/js/anime.min.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script>
@@ -426,7 +451,6 @@
 
 
 		})();
-
 	</script>
 </body>
 
