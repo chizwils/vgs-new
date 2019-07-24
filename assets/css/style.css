@@ -53,6 +53,7 @@ svg {
 	/* set height to pixels if you want angle to change with screen width */
 }
 
+
 .background-image {
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
@@ -78,7 +79,7 @@ nav ul a {
 }
 
 .brand-logo img {
-	height: 80px;
+	height: 90px;
 	padding: 10px;
 }
 
@@ -214,11 +215,9 @@ header h1 {
 	border-bottom: 1px solid darkgoldenrod;
 }
 .who h1{
-	animation: fadeInDown 2s;
+	
 }
-.about .who p{
-	animation: fadeInRight 2s;
-}
+
 @keyframes fadeInRight {
    0% {
       opacity: 0;
@@ -232,14 +231,16 @@ header h1 {
 @keyframes fadeInDown {
    0% {
       opacity: 0;
-      transform: translateY(-100px);
+      transform: translateY(-50px);
    }
    100% {
       opacity: 1;
       transform: translateY(0);
    }
 }
-
+.icon-up{
+	animation: fadeInDown 1s ease-in ;
+}
 .about {
 
 	position: relative;
@@ -250,23 +251,12 @@ header h1 {
 .smart-wrapper {
 	
 	padding: 1.3em;
-	animation: fadein 3s;
+	animation: fadein  500ms ease-in;
 }
 .smart-img{
 	background-image: url(../images/chess.jpg);
 	height: 70vh;
 	background-color: #000038;
-}
-@keyframes fadein {
-    from { 
-		opacity: 0;
-		transform: translateX(-30px);
-		
-	}
-    to   { 
-		opacity: 1;
-		transform: translateX(30px);
-	}
 }
 
 
@@ -400,7 +390,7 @@ p {
 
 .box {
 
-	height: 1em;
+	min-height: 33em;
 	padding: 1em;
 	overflow: hidden;
  -webkit-transition: height ease-in-out 2s;
@@ -411,18 +401,7 @@ p {
 
 }
 .boxfull{
-	animation: curtain 2s forwards;
-}
-@keyframes curtain {
-	from{
-		opacity: 0;
-		height: 1em
-	}
-	
-	to{
-		opacity: 1;
-		height: 33em
-	}
+	animation: fadeRight 1s forwards;
 }
 
 .box:nth-child(2) {
@@ -505,47 +484,78 @@ p {
 .contact button {
 	background-color: transparent;
 	width: 17em;
-	border: 1px solid #000038;
-	color: #000038;
+	border: 1px solid #0f0f6d;
+	color: #0f0f6d;
 }
 
 .contact button:hover {
-	background-color: #000038;
+	background-color: #0f0f6d;
 	color: white;
+}
+.contact{
+	
+	
+	
+	
+}
+.ss>*{
+	
+	
 }
 .career-img{
 	background-image: url(../images/black.jpg);
 	height: 70vh;
-	background-color: #000038;
+	
 }
+.career img{
+	height: 90vh;
+	
+}
+.career h1{
+font-family: 'Crimson Text', serif;
+	color: #0f0f6d;
+	line-height: 1.5em;}
+.career p{
+	color: #0f0f6d;
+}
+.career h1{
+	animation:  fade-up ease-in-out 0.5s;
+}
+.first{
+	animation:  fade-up ease-in-out 0.7s;
+}
+.second{
+	animation:  fade-up ease-in-out 0.9s;
+}
+
 /* label color */
   
    /* label focus color */
    .input-field input[type=text]:focus + label,.input-field input[type=email]:focus + label,.input-field textarea:focus + label {
-     color: #000038!important;
+     color: #0f0f6d!important;
    }
    /* label underline focus color */
    .input-field input[type=text]:focus, .input-field input[type=email]:focus,.input-field textarea:focus  {
-     border-bottom: 1px solid #000038!important;
-     box-shadow: 0 1px 0 0 #000038!important;
+     border-bottom: 1px solid #0f0f6d!important;
+     box-shadow: 0 1px 0 0 #0f0f6d!important;
    }
    /* valid color */
    .input-field input[type=text].valid,  .input-field input[type=email].valid {
-     border-bottom: 1px solid #000038!important;
-     box-shadow: 0 1px 0 0 #000038!important;
+     border-bottom: 1px solid #0f0f6d!important;
+     box-shadow: 0 1px 0 0 #0f0f6d!important;
    }
    /* invalid color */
    .input-field input[type=text].invalid, .input-field input[type=email].invalid  {
-     border-bottom: 1px solid #000038!important;
-     box-shadow: 0 1px 0 0 #000038!important;
+     border-bottom: 1px solid #0f0f6d!important;
+     box-shadow: 0 1px 0 0 #0f0f6d!important;
    }
    /* icon prefix focus color */
    .input-field .prefix.active {
-     color: #000038!important;
+     color: #0f0f6d!important;
    }
 /**************FOOTER************/
 footer {
-	background-color: #000038 !important;
+	background-color: #0f0f6d !important;
 	font-size: 0.8em;
 }
 
