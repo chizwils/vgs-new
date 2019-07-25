@@ -324,11 +324,16 @@ p {
 /******SERVICES*****/
 .services {
 
-	/**background-color: #000038;*/
-	background-color: rgba(15, 15, 109, 0.1);
+	background-color: #000038;
+	/*background-color: rgba(15, 15, 109, 0.1);*/
 	
 
 	margin-bottom: 10%;
+}
+.win{
+	background-image: url(../images/win.jpg);
+	height: 70vh;
+	background-color: #000038;
 }
 
 .svg-wrap {
@@ -425,7 +430,7 @@ p {
 
 .product {
 	position: relative;
-	margin:  5% 0;
+	
 }
 .product h1 {
 	font-family: 'Crimson Text', serif;
@@ -483,6 +488,15 @@ p {
 	color: #0f0f6d;
 	line-height: 1.5em;
 }
+.contact h1:after {
+	content: "";
+	display: block;
+	margin: 0 auto;
+	width: 20%;
+	transition: width 2s ease-out ;
+	padding-top: 20px;
+	border-bottom: 1px solid darkgoldenrod;
+}
 
 .contact label {
 	font-size: 0.6em;
@@ -526,6 +540,14 @@ font-family: 'Crimson Text', serif;
 	line-height: 1.5em;}
 .career p{
 	color: #0f0f6d;
+}
+.career h1:after {
+	content: "";
+	display: block;
+	margin: 0 auto;
+	width: 20%;
+	padding-top: 20px;
+	border-bottom: 1px solid darkgoldenrod;
 }
 .career h1{
 	animation:  fade-up ease-in-out 0.5s;
