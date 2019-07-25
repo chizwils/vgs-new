@@ -29,12 +29,16 @@
 
 
 /**************HEADER************/
+html{
+	scroll-behavior: smooth;
+}
 html,
 body {
 	font-size: calc(4px + 1vw);
 	overflow-x: hidden;
 	font-family: 'Open Sans', sans-serif;
 	background-color: #FFF;
+	transition: all 1s linear;
 }
 
 /***NAV**/
@@ -185,11 +189,16 @@ header h1 {
 
 
 }
-
+.about{
+	margin-top: 2%;
+}
 .about h1 {
 	font-family: 'Crimson Text', serif;
 	font-size: 3em;
 	color: #000038;
+}
+.bet img{
+	height: 400px;
 }
 
 .about h3 {
@@ -315,10 +324,10 @@ p {
 /******SERVICES*****/
 .services {
 
-	background-color: #000038;
+	/**background-color: #000038;*/
+	background-color: rgba(15, 15, 109, 0.1);
 	
-	min-height: 260vh !important;
-	margin-top: 20%;
+
 	margin-bottom: 10%;
 }
 
@@ -362,7 +371,7 @@ p {
 	content: "";
 	display: block;
 	margin: 0;
-	width: 0%;
+	width: 20%;
 	transition: width 2s ease-out ;
 	padding-top: 20px;
 	border-bottom: 1px solid darkgoldenrod;
@@ -580,7 +589,9 @@ footer a {
 	margin-top: 20%;
 	margin-bottom: 10%;
 }
-
+	.background-image{
+		background-attachment: inherit;
+	}
 	.box {
 		transform: translate(0, 0) !important;
 	}

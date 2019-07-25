@@ -6,10 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>VGS-VECHHIA GLOBAL SERVICES</title>
-	<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+	</script>
 	<link rel="stylesheet"  type="text/css" href="https://unpkg.com/aos@next/dist/aos.css" />
 	
 	<!-- Compiled and minified CSS -->
@@ -39,15 +38,13 @@
 			</ul>
 
 		</nav>
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-			<polygon fill="white" points="0,100 100,0 100,100" />
-		</svg>
+		
 
 
 		<div class="cta">
 			<h1>Corporate Strategy and Management</h1>
 			<p>Wise counsel to achieve your goals</p>
-			<a class="btn">Learn more</a>
+			<a class="btn" href="#services">Learn more</a>
 			<!--<a class="btn">LOOK HERE</a>-->
 		</div>
 		<!--<div class="scroll-down">
@@ -58,9 +55,12 @@
 
 	<section class="about  c background-image">
 		<div class="">
-			<div class="container ">
-				<div class='who'>
-					<div data-aos="fade-down" data-aos-duration="3000"><h1 class='center ' >Who we are</h1></div>
+			<div class="cont row bet">
+				<div class="col s12 m6" data-aos="fade-down-right">
+					<img src="assets/images/bet.jpg">
+				</div>
+				<div class='who col s12 m6'>
+					<div data-aos="fade-down" data-aos-duration="1000"><h1 class='center ' >Who we are</h1></div>
 					<div class="" data-aos="fade-right">
 						<p>Vecchia Global Services is a firm that provides bespoke management strategy/implementation services to the Nigerian gaming industry and helps clients increase their customer base. We do this by;</p>
 						<p class="indent"><span></span> Providing technology ( apps/games/B2B software ) that increase customer acquisition and retention. We provide innovative general or custom made technology for our clients based on their needs/goals, and based on any recommended qualitative/quantitative VGS strategy on how they can grow their customer base. </p>
@@ -140,9 +140,7 @@
 	</section>-->
 
 	<section class="services " id="services">
-		<div class="svg-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-				<polygon fill="#000038" points="0,0 0,100 100,100" />
-			</svg></div>
+		
 		<div class="contain">
 			<div class='grid-wrapper'>
 				<div class="box card " data-aos="fade-up" data-aos-duration="3000">
@@ -269,7 +267,7 @@
 	</section>
 
 	<footer class="page-footer">
-		<div class="container">
+	<!--	<div class="container">
 			<!--	<div class="row">
 				<div class="col l6 s12">
 					<h5 class="">Footer Content</h5>
@@ -284,8 +282,8 @@
 						<li><a class="" href="#!">Link 4</a></li>
 					</ul>
 				</div>
-			</div>-->
-		</div>
+			</div>--
+		</div>-->
 		<div class="footer-copyright">
 			<div class="container">
 				© 2019 Copyright Vecchia Global Service
@@ -295,7 +293,13 @@
 	</footer>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
-		AOS.init();
+		$(document).ready(function(){
+			AOS.init({
+				disable: false,
+				once: true,
+			});
+		})
+		
 	</script>
 </body>
 
